@@ -1,0 +1,2 @@
+from models.dtos.responses.city_temperature_stats_response import CityTemperatureStatsResponse
+from models.dtos.responses.city_average_temperature_response import CityAverageTemperatureResponse
