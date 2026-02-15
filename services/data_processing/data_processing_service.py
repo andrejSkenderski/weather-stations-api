@@ -5,12 +5,11 @@ from models.dtos import CityTemperatureStatsCacheEntryDto
 
 
 class DataProcessingService:
-    # csv_path: str = "/app/measurements.csv"
-
-    csv_path: str = "/app/measurements_test.csv" # testing file with 20 entries used for automatic cache reload feature
+    def __init__(self, csv_file_path: str):
+        self._csv_file_path = csv_file_path
 
     def get_file_modified_time(self) -> float:
-        return os.path.getmtime(self.csv_path)
+        return os.path.getmtime(self._csv_file_path)
 
     def load_data_and_calculate_stats(self) -> dict[str, CityTemperatureStatsCacheEntryDto]:
         df = self._load_csv()
@@ -18,7 +17,7 @@ class DataProcessingService:
         return stats
 
     def _load_csv(self) -> pd.DataFrame:
-        return pd.read_csv(self.csv_path, delimiter=';')
+        return pd.read_csv(self._csv_file_path, delimiter=';')
 
     @staticmethod
     def _calculate_stats(df: pd.DataFrame) -> dict[str, CityTemperatureStatsCacheEntryDto]:

@@ -25,7 +25,11 @@ VALID_PASSWORD=password
 SECRET_KEY=secret-key-123
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
+CSV_HOST_PATH=/path/to/your/measurements.csv
+CSV_FILE_PATH=/app/measurements.csv
 ```
+
+**Note:** The `measurements.csv` file is not included due to its size. Update `CSV_HOST_PATH` to point to your CSV file on your machine.
 
 ### Running the Application
 
