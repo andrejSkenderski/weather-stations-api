@@ -1,0 +1,21 @@
+datetime;city;temp_celsius
+1986-01-01T00:00;New York;-0.5
+1986-01-01T00:00;Los Angeles;16.8
+1986-01-01T00:00;Chicago;-3.4
+1986-01-01T00:00;Houston;15.5
+1986-01-01T00:00;Phoenix;16.5
+1986-01-01T00:00;Toronto;-10.9
+1986-01-01T00:00;Mexico City;17.5
+1986-01-01T00:00;Vancouver;5.4
+1986-01-01T00:00;Montreal;-10.1
+1986-01-01T00:00;Miami;20.0
+1986-01-01T00:00;Denver;3.0
+1986-01-01T00:00;San Francisco;15.8
+1986-01-01T00:00;Atlanta;10.0
+1986-01-01T00:00;Dallas;10.1
+1986-01-01T00:00;Minneapolis;-10.2
+1986-01-01T00:00;Havana;20.7
+1986-01-01T00:00;Guatemala City;21.0
+1986-01-01T00:00;Anchorage;-3.7
+1986-01-01T00:00;São Paulo;23.9
+1986-01-01T00:00;Buenos Aires;24.4
