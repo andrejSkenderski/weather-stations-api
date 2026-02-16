@@ -45,7 +45,7 @@ def create_app() -> FastAPI:
     container.config.valid_password.from_value(settings.valid_password)
     container.config.algorithm.from_value(settings.algorithm)
     container.config.access_token_expire_minutes.from_value(settings.access_token_expire_minutes)
-    container.config.csv_file_path.from_value(settings.csv_file_path)
+    container.config.csv_container_file_path.from_value(settings.csv_container_file_path)
 
     wire(modules=[weather_api_module, auth_api_module], container=container)
 
