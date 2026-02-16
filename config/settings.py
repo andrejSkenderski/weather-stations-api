@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int
     csv_host_path: str
     csv_container_file_path: str
+    chunk_size: int
 
     class Config:
         env_file = ".env"

@@ -28,7 +28,7 @@ class WeatherFacadeService:
 
         return [
             CityTemperatureStatsResponse.from_cache(city_name, city_stats)
-            for city_name, city_stats in city_entries.items()
+            for city_name, city_stats in sorted(city_entries.items())
         ]
 
     async def filter_by_average_temperature(
@@ -42,7 +42,7 @@ class WeatherFacadeService:
 
         return [
             CityAverageTemperatureResponse.from_cache(city_name, city_stats)
-            for city_name, city_stats in city_entries.items()
+            for city_name, city_stats in sorted(city_entries.items())
             if compare(city_stats.avg_temp, reference_temp)
         ]
 
