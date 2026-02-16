@@ -37,6 +37,7 @@ class Container(containers.DeclarativeContainer):
     data_processing_service = providers.Factory(
         DataProcessingService,
         csv_file_path=config.csv_container_file_path,
+        chunk_size=config.chunk_size,
     )
 
     weather_facade_service = providers.Factory(
