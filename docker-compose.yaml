@@ -10,7 +10,7 @@ services:
       - .env
     volumes:
       - .:/app
-      - ${CSV_HOST_PATH}:/app/measurements.csv:ro
+      - ${CSV_HOST_PATH}:${CSV_CONTAINER_FILE_PATH}:ro
     ports:
       - "8010:8080"
     depends_on:
